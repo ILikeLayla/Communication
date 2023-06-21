@@ -1,9 +1,6 @@
 /target/
 *.lock
-
-/venv/
 /.vscode/
-/python/__pycache__/
 /CommunicationCore/
 /.idea/
 

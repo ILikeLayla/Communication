@@ -1,6 +1,6 @@
 use eframe;
 use egui::{self, Ui, CentralPanel};
-use base::data_class::data_class::*;
+use CommunicationCore::data_class::data_class::*;
 use std::rc::Rc;
 
 struct UiTemplate {
@@ -75,7 +75,7 @@ impl eframe::App for UiTemplate {
 pub mod stater {
     use eframe::{run_native, NativeOptions};
     use super::UiTemplate;
-    use base::data_class::data_class::User;
+    use CommunicationCore::data_class::data_class::User;
 
     pub fn stater(user: User) {
         let options:NativeOptions = NativeOptions {..Default::default()};

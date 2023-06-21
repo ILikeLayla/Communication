@@ -4,6 +4,7 @@ This is a code which provides a **side-to-side** communication. It won't record 
 
 ## Enviorment setup
 
+- [CommunicationCore](https://github.com/ILikeLayla/CommunicationCore)(You need to put it into your dictionary.)
 - [Python](https://www.python.org/)
 - [Rust](https://www.rust-lang.org/)
 - [Rust-analyzer](https://rust-analyzer.github.io/)(optional)
