@@ -12,7 +12,7 @@ This is a code which provides a **side-to-side** communication. It won't record 
 
 ## Note
 
-- Before you use it, you need to prepare your font. You need to put it in rust dict.
+- Before you use it, you should prepare a font file and name it as "font.tff" and put it into the font dic. Here I also provide one.
 
 ## Version roadmap
 
