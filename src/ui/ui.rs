@@ -28,12 +28,12 @@ impl UiTemplate {
 
         let sample_message = Message::new(
             Rc::clone(&user), 
-            Rc::new(User::new("2".to_string())),
-            "你好".to_string()
+            Rc::new(User::new("2")),
+            "你好"
         );
 
         Self { 
-            messages: MessagesList::new(vec![sample_message]),
+            messages: MessagesList::from(vec![sample_message]),
             // messages: MessagesList::new(Vec::new()),
             input: String::new(),
             user,
@@ -66,7 +66,7 @@ impl eframe::App for UiTemplate {
             });
 
             for i in to_send.iter() {
-                self.messages.push(Message::new(Rc::clone(&self.user), Rc::clone(&self.user), i.to_string()))
+                self.messages.push(Message::new(Rc::clone(&self.user), Rc::clone(&self.user), i))
             }
         });
     }
